@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+.homepage {
+    background-color: rgba(230, 233, 233, 0.966);
+    height: 97vh;
+    width: 97vw;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.section-one {
+    background-color: red;
+    height: 10%;
+}
+
+.section-two {
+    /* background-color: yellow; */
+    height: 78%;
+    display: flex;
+
+    .table-area {
+        height: 100%;
+        width: 60%;
+        background-color: aqua;
+    }
+
+    .item-area {
+        height: 100%;
+        width: 45%;
+        /* background-color: lightgreen; */
+        padding: 10px;
+
+        .items {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            background-color: rgb(240, 237, 237);
+            padding: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: auto;
+        }
+
+        .items::-webkit-scrollbar {
+            width: 0;
+        }
+    }
+}
+
+.section-three {
+    background-color: green;
+    height: 12%;
+}
