@@ -10,6 +10,8 @@
     padding: 10px;
 }
 
+/* ==================== SECTION ONE STYLING =============== */
+
 .section-one {
     /* background-color: red; */
     height: 10%;
@@ -54,12 +56,12 @@ hr {
     margin-top: 0;
 }
 
-
+/* ========================= SECTION TWO STYLING ============== */
 
 /* ---------------css rules for the task -----------------*/
 .section-two {
     /* background-color: yellow; */
-    height: 78%;
+    height: 75%;
     display: flex;
 
     .table-area {
@@ -72,7 +74,7 @@ hr {
         height: 100%;
         width: 45%;
         /* background-color: lightgreen; */
-        padding: 10px;
+        padding: 2px;
 
         .items {
             width: 100%;
@@ -93,7 +95,99 @@ hr {
 }
 /* ------------------------------------------ */
 
+/* =================== SECTION THREE STYLING ======================= */
 .section-three {
-    background-color: green;
-    height: 12%;
+    /* background-color: green; */
+    height: 15%;
+    display: flex;
 }
+
+/* .section-three div {
+    padding: 10px;
+} */
+
+/* --------------- Table side butoons ----------------- */
+
+.section-three > div:first-child {
+    /* background-color: yellow; */
+    width: 60%;
+    height: 100%;
+}
+
+.table-side-buttons {
+    padding: 2px;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.table-side-buttons > div {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-side-buttons > div Button {
+    margin: 2px;
+    height: 40%;
+}
+
+.font-format {
+    font-size: 10px;
+    text-align: left;
+    /* align-items: center; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+/* ------------------------------------------------------ */
+
+/* ----------------- Item side butoons ------------------ */
+.section-three > div:last-child {
+    /* background-color: orange; */
+    width: 45%;
+    height: 100%;
+}
+
+.item-side-buttons {
+    padding: 2px;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.item-side-buttons > div {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-side-buttons > div Button {
+    margin: 2px;
+    height: 40%;
+}
+
+.item-font-format {
+    font-size: 12px;
+    /* text-align: center; */
+    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-button {
+    height: 20px;
+}
+
+.green-color-button {
+    background-color: rgb(55, 158, 55);
+    color: black;
+}
+
+.yellow-color-button {
+    background-color: rgb(253, 253, 17);
+    color: black;
+}
+/* -------------------------------------------------- */

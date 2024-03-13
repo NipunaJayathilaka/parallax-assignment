@@ -3,6 +3,7 @@ import "./HomePage.css";
 import ItemCard from "./itemCard/ItemCard.tsx";
 import products from "../productJSON/ProductData.json";
 import Dropdown from "react-bootstrap/Dropdown";
+import Button from "react-bootstrap/Button";
 
 export default function HomePage() {
   return (
@@ -38,7 +39,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <hr/>
+      <hr />
 
       <div className="section-two">
         <div className="table-area"></div>
@@ -61,7 +62,104 @@ export default function HomePage() {
         {/* ----------------------------------- */}
       </div>
 
-      <div className="section-three"></div>
+      <div className="section-three">
+        <div className="table-side-buttons">
+          <div className="">
+            <Button className="font-format" variant="primary">
+              New Button <br />
+              Rs. 100.00
+            </Button>
+            <Button className="font-format" variant="primary">
+              New Button <br />
+              Rs. 100.00
+            </Button>
+          </div>
+          <div className="">
+            <Button className="font-format" variant="primary">
+              Discount <br />
+              Rs. 100.00
+            </Button>
+            <Button className="font-format" variant="primary">
+              {" "}
+              Shipping <br />
+              Rs. 100.00
+            </Button>
+          </div>
+          <div className="">
+            <Button className="font-format" variant="primary">
+              {" "}
+              Tax <br />
+              Rs. 100.00
+            </Button>
+            <Button className="font-format" variant="primary">
+              {" "}
+              Packaging <br />
+              Rs. 100.00
+            </Button>
+          </div>
+          <div className="">
+            <Button className="font-format" variant="light">
+              Item Count: 400
+            </Button>
+            <Button className="font-format" variant="primary">
+              {" "}
+              Total <br />
+              Rs. 100.00
+            </Button>
+          </div>
+        </div>
+
+        <div className="item-side-buttons">
+          <div className="">
+            <Button
+              className="item-font-format green-color-button"
+              variant="light"
+            >
+              <img className="download-button" src="./images/5.png" alt="" />{" "}
+              Cash
+            </Button>
+            <Button className="item-font-format" variant="primary">
+              Button
+            </Button>
+          </div>
+          <div className="">
+            <Button
+              className="item-font-format yellow-color-button"
+              variant="light"
+            >
+              <img className="download-button" src="./images/5.png" alt="" />{" "}
+              Pay
+            </Button>
+            <Button className="item-font-format" variant="primary">
+              Button
+            </Button>
+          </div>
+          <div className="">
+            <Button
+              className="item-font-format yellow-color-button"
+              variant="light"
+            >
+              <img className="download-button" src="./images/5.png" alt="" />{" "}
+              Card
+            </Button>
+            <Button className="item-font-format" variant="primary">
+              Button
+            </Button>
+          </div>
+          <div className="">
+            <Button
+              className="item-font-format yellow-color-button"
+              variant="light"
+            >
+              <img className="download-button" src="./images/5.png" alt="" />{" "}
+              Credit
+            </Button>
+            <Button className="item-font-format" variant="primary">
+              Button
+            </Button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
