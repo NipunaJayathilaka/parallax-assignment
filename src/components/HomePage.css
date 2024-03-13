@@ -58,7 +58,7 @@ hr {
 
 /* ========================= SECTION TWO STYLING ============== */
 
-/* ---------------css rules for the task -----------------*/
+/* -----------------------------------css rules for the task ----------------------------------*/
 .section-two {
     /* background-color: yellow; */
     height: 75%;
@@ -67,7 +67,7 @@ hr {
     .table-area {
         height: 100%;
         width: 60%;
-        background-color: aqua;
+        /* background-color: aqua; */
     }
 
     .item-area {
@@ -93,7 +93,53 @@ hr {
         }
     }
 }
-/* ------------------------------------------ */
+/* ------------------------------------------------------------------ */
+
+.part-one {
+    background-color: whitesmoke;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.table-area-one {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.table-area-one img {
+    height: 20px;
+}
+
+.bg-nested-dropdown {
+    width: 260px;
+    border-color: black;
+}
+
+.table-area-two {
+    justify-content: space-between;
+    display: flex;
+    padding: 0 10px;
+}
+
+#bg-nested-dropdown {
+    width: 220px;
+    border-color: black;
+}
+
+.part-two {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.part-three {
+    background-color: whitesmoke;
+    height: 30px;
+    border-radius: 5px;
+}
 
 /* =================== SECTION THREE STYLING ======================= */
 .section-three {

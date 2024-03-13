@@ -4,10 +4,13 @@ import ItemCard from "./itemCard/ItemCard.tsx";
 import products from "../productJSON/ProductData.json";
 import Dropdown from "react-bootstrap/Dropdown";
 import Button from "react-bootstrap/Button";
+import DropdownButton from "react-bootstrap/DropdownButton";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
 
 export default function HomePage() {
   return (
     <div className="homepage">
+      {/* ===================================== SECTION ONE =====================================      */}
       <div className="section-one">
         <div className="">
           <img className="img" src="./images/1.png" alt="" />
@@ -41,10 +44,100 @@ export default function HomePage() {
 
       <hr />
 
-      <div className="section-two">
-        <div className="table-area"></div>
+      {/* ================================= SECTION TWO =====================================      */}
 
-        {/* This is the area that the task have implemented */}
+      <div className="section-two">
+        <div className="table-area">
+          <div className="part-one">
+            <div className="table-area-one">
+              <div className="">
+                <ButtonGroup>
+                  <Button variant="secondary">
+                    <img src="./images/2.png" alt="" />
+                  </Button>
+
+                  <DropdownButton
+                    as={ButtonGroup}
+                    title="Please Selcect"
+                    id="bg-nested-dropdown"
+                    variant="light"
+                    className="bg-nested-dropdown"
+                  >
+                    <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
+                    <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
+                  </DropdownButton>
+                  <Button variant="secondary">
+                    <img src="./images/3.png" alt="" />
+                  </Button>
+                </ButtonGroup>
+              </div>
+              <div className="">
+                <ButtonGroup>
+                  <Button variant="secondary">
+                    <img src="./images/4.png" alt="" />
+                  </Button>
+
+                  <DropdownButton
+                    as={ButtonGroup}
+                    title="Please Selcect"
+                    id="bg-nested-dropdown"
+                    variant="light"
+                    className="bg-nested-dropdown"
+                  >
+                    <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
+                    <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
+                  </DropdownButton>
+                  <Button variant="secondary">
+                    <img src="./images/3.png" alt="" />
+                  </Button>
+                </ButtonGroup>
+              </div>
+            </div>
+
+            <div className="table-area-two">
+              <DropdownButton
+                as={ButtonGroup}
+                title="Please Selcect"
+                id="bg-nested-dropdown"
+                variant="light"
+              >
+                <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
+                <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
+              </DropdownButton>
+              <DropdownButton
+                as={ButtonGroup}
+                title="Please Selcect"
+                id="bg-nested-dropdown"
+                variant="light"
+              >
+                <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
+                <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
+              </DropdownButton>
+              <DropdownButton
+                as={ButtonGroup}
+                title="Please Selcect"
+                id="bg-nested-dropdown"
+                variant="light"
+              >
+                <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
+                <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
+              </DropdownButton>
+            </div>
+          </div>
+
+          <div className="part-two">
+            <p>PRODUCT</p>
+            <p>QUANTITY</p>
+            <p>UNIT PRICE</p>
+            <p>LINE PRICE</p>
+          </div>
+
+          <div className="part-three">
+            <p>Please Select Product Item</p>
+          </div>
+        </div>
+
+        {/*============================ This is the area that the task have implemented ===============*/}
         <div className="item-area">
           <div className="items">
             {products.map((product, index) => (
@@ -59,8 +152,10 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-        {/* ----------------------------------- */}
+        {/* ========================================================================================== */}
       </div>
+
+      {/* ================================== SECTION THREE ===========================================       */}
 
       <div className="section-three">
         <div className="table-side-buttons">
